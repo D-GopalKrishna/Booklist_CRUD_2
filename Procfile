@@ -1,1 +1,1 @@
-web: gunicorn booklist-crud-101.wsgi
+web: gunicorn Booklist.wsgi
