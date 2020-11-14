@@ -25,9 +25,9 @@ STATIC_DIR = os.path.join(BASE_DIR, "static")
 SECRET_KEY = 'a^^!slyut#oc%ibn%dy5%yu5=#j$a#udav@_i$7uzm5mhrct_9'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['https://booklist-crud-101.herokuapp.com/', 'localhost']
+ALLOWED_HOSTS = ['booklist-crud-101.herokuapp.com', 'localhost']
 
 
 # Application definition
