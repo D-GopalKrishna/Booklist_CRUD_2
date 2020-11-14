@@ -27,7 +27,7 @@ SECRET_KEY = 'a^^!slyut#oc%ibn%dy5%yu5=#j$a#udav@_i$7uzm5mhrct_9'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['booklist-crud-101.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
@@ -83,11 +83,17 @@ DATABASES = {
     'default': {
         # 'ENGINE': 'django.db.backends.sqlite3',
         # 'NAME': BASE_DIR / 'db.sqlite3',
+        # 'ENGINE': 'django.db.backends.postgresql',
+        # 'NAME' : 'booklist_1',
+        # 'USER' : 'postgres',
+        # 'PASSWORD' : 'ManishPort',
+        # 'HOST' : 'localhost',
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME' : 'booklist_1',
-        'USER' : 'postgres',
-        'PASSWORD' : 'ManishPort',
-        'HOST' : 'localhost',
+        'NAME' : 'd3q6i05g5e7fm6',
+        'USER' : 'lycmrptpawpbop',
+        'PASSWORD' : '08384b6534ff21e5c21fae744ea9987e04131d3bf30c0692338fbc1b2e512e67',
+        'HOST' : 'ec2-54-160-202-3.compute-1.amazonaws.com',
+        'PORT' : '5432'
     }
 }
 
@@ -132,3 +138,4 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     STATIC_DIR,
 ]
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
