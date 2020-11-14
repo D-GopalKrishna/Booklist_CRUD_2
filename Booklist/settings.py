@@ -27,7 +27,7 @@ SECRET_KEY = 'a^^!slyut#oc%ibn%dy5%yu5=#j$a#udav@_i$7uzm5mhrct_9'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['booklist-crud-101.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['booklist-crud-101.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
