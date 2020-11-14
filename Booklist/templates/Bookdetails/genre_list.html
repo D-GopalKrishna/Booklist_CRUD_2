@@ -1,0 +1,57 @@
+{% extends 'Bookdetails/base.html' %}
+
+{% block content %}
+
+    <h1>Your new Genre has been added successfully.</h1>
+
+
+    <br>
+    <br>
+    <br>
+
+
+
+
+
+    <div class="table-responsive">
+        <table class="table table-borderless table-striped table-hover" style="overflow: scroll;">
+            <thead class="border-bottom font-weight-bold">
+                <tr>
+                    <!-- <td>Genre</td> -->
+                    <td>
+                        <a href="{% url 'add_genre' %}" class="btn btn-outline-success">
+                            <i class="fas fa-plus"></i> Add New
+                        </a>
+                    </td>
+                </tr>
+            </thead>
+        </table>
+    </div>
+        <!--
+        <tbody>
+            <tr>
+                <td>Hi</td>
+            </tr>
+            {% for genre in genre_kaster %}
+                <tr>
+                    <td>{{ genre.nik }}</td>
+
+                    <td>
+                        <a href="{% url 'update_genre' genre.id %}" class="btn text-secondary px-0 ">
+                            <i class="far fa-edit fa-lg"></i>
+                        </a>
+                        <form action="{% url 'book_delete' genre.id %}" method="post" class="d-inline">
+                            {% csrf_token %}
+                            <button type="submit" class="btn" style="background-color: rgb(218, 201, 188);">
+                                <i class="far fa-trash-alt fa-lg text-danger float-right"></i>
+                            </button>
+                        </form>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody> -->
+    </table>
+
+</div>
+
+{% endblock content %}

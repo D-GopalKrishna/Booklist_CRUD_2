@@ -1,0 +1,25 @@
+{% extends 'Bookdetails/base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+    <div class="bookfields">
+        <form action="" method="post" autocomplete="off">
+            {% csrf_token %}
+            <table class="elanoir">
+                {{form2.as_table}}
+            </table>
+            <br>
+
+            <button type="submit" class="btn btn-outline-info" ><i class="fas fa-save"> </i> Submit</button>
+
+            
+
+        </form>
+            <br>
+            <a href="{% url 'book_list' %}" style="text-decoration:none; color:whitesmoke"><button  class="btn btn-outline-secondary" style="width: 160px; margin-left: auto; margin-right: auto;"><i class="fas fa-stream"></i> Go to list</button></a>
+    </div>
+    
+
+
+
+{% endblock content %}   

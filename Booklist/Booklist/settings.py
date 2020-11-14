@@ -25,9 +25,9 @@ STATIC_DIR = os.path.join(BASE_DIR, "static")
 SECRET_KEY = 'a^^!slyut#oc%ibn%dy5%yu5=#j$a#udav@_i$7uzm5mhrct_9'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['booklist-crud-101.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'Bookdetails',
-    'crispy_forms'
+    'crispy_forms',
+    'rest_framework'
 ]
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
@@ -82,18 +83,11 @@ DATABASES = {
     'default': {
         # 'ENGINE': 'django.db.backends.sqlite3',
         # 'NAME': BASE_DIR / 'db.sqlite3',
-        # 'ENGINE': 'django.db.backends.postgresql',
-        # 'NAME' : 'd3q6i05g5e7fm6',
-        # 'USER' : 'lycmrptpawpbop',
-        # 'PASSWORD' : '08384b6534ff21e5c21fae744ea9987e04131d3bf30c0692338fbc1b2e512e67',
-        # 'HOST' : 'ec2-54-160-202-3.compute-1.amazonaws.com',
-        # 'PORT' : '5432'
         'ENGINE': 'django.db.backends.postgresql',
         'NAME' : 'booklist_1',
         'USER' : 'postgres',
         'PASSWORD' : 'ManishPort',
         'HOST' : 'localhost',
-
     }
 }
 
@@ -135,7 +129,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
-# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_DIRS = [
     STATIC_DIR,
 ]

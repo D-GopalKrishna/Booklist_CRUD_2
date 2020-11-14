@@ -1,5 +1,5 @@
 from django import forms
-from .models import Book
+from .models import Book, Genrek
 
 class BookForm(forms.ModelForm):
     class Meta:
@@ -17,3 +17,13 @@ class BookForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):
         super(BookForm, self).__init__(*args, **kwargs)
         self.fields['genre'].empty_label = '  --------------- Select --------------    '
+
+
+
+class GenrekForm(forms.ModelForm):
+    class Meta:
+        model = Genrek
+        fields = {'nik'}
+        labels = {
+            'nik' : 'Add '
+        }
