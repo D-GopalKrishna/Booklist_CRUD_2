@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"  crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="Booklist\Bookdetails\static\Bookdetails\base.css"> -->
+    <title>Book Register</title>
+</head>
+<body>
+    <div class="myres">
+        <h1>Book Register</h1>
+        <br>
+        <h2>CRUD operations on Booklist</h2>
+
+        <br>
+        <br>
+        <br>
+        
+        {% block content %}
+    
+        {% endblock content %}
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,57 @@
+
+* {
+    padding: 0px;
+    margin: 0px;
+    /* background: black; */
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(71, 18, 121);
+}
+
+
+
+.myres{
+    margin: 10px 100px 40px 100px;
+    border-radius: 10px;
+    padding: 100px 0px 100px 0px;
+    background-color: rgb(218, 201, 188);
+    text-align: center;
+        
+}
+
+.bookfields{
+    display: grid;
+    grid-template-columns: repeat( 1fr);
+    /* margin-left: 300px; */
+}
+
+.elanoir{
+    margin-left: auto;
+    margin-right: auto;
+}
+.button1{
+    margin-left: auto;
+    margin-right: auto;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.button2{
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+
+
+
+
+@media (max-width: 600px){
+    
+    .myres{
+        margin: 10px 20px 10px 20px;
+        border-radius: 10px;
+        padding: 100px 10px 100px 10px;
+        background-color: rgb(218, 201, 188);
+        text-align: center;
+            
+    }
+}
